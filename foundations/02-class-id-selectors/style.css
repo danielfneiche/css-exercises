@@ -1,0 +1,19 @@
+.odd {
+    background-color: #ffb6c1;
+    font-family: Verdana, "Dejavu Sans", sans-serif;
+}
+
+#secondElement {
+    color: #1097f0;
+    font-size: 36px;
+}
+
+.adjust-font-size {
+    font-size: 24px;
+}
+
+#fourthElement {
+    background-color: #90ee90;
+    font-size: 24px; /* Could have reused the adjust-font-size class for the fourth element to reduce duplicate code. **/
+    font-weight: bold;
+}
