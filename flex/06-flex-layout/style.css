@@ -5,17 +5,55 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* A better implementation would be to apply flex grow to the .content in order to take up the remaining space on the page that the header+footer do not, and use justify-content to center it */
 }
 
 img {
   width: 600px;
 }
 
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  border: 2px solid red;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: grey;;
+}
+
+
+
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
